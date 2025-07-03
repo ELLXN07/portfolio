@@ -9,11 +9,10 @@ Welcome to my personal portfolio website — a showcase of my skills, interests,
 ## ✨ Features
 
 - ⚡ Smooth scrolling and transitions  
-- 🎨 Glassmorphic black-themed UI inspired by Apple aesthetics  
+- 🎨 Material Themed UI with a lot of themes 
 - 💻 Responsive and mobile-friendly layout  
 - 🧠 Typing animations and reactive elements  
-- 🖼️ Floating movie posters & media banners  
-- ⭐ Letterboxd-style rating UI (experimental)  
+- 🖼️ Floating movie posters & media banners   
 - 🔧 Built with Tailwind CSS
 
 ---
