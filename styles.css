@@ -123,9 +123,68 @@ body {
     50% { transform: translateY(10px); }
 }
 @media (max-width: 600px) {
+    .container { padding-top: 0; }
     .intro .name { font-size: 2.2rem; }
     .intro .role { font-size: 1.1rem; }
-    .container { padding-top: 0; }
+    .main-nav { display: none !important; }
+    .tools-flip-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 100vw;
+        padding: 0 2vw;
+    }
+    .card {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0 auto;
+        height: 120px;
+        padding: 0.7rem 0.7rem;
+    }
+    .card-front, .card-back {
+        font-size: 0.7rem;
+        padding: 0.7rem 0.7rem;
+    }
+    .tool-icon { font-size: 0.9rem; }
+    .tool-name { font-size: 0.7rem; }
+    .badge { font-size: 0.6rem; }
+    .progress-bar { width: 36px; height: 5px; }
+    .tools-title, .about-heading, .projects-title, .conclusion-title {
+        font-size: 0.95rem;
+        margin-bottom: 0.7rem;
+        padding: 0 2vw;
+    }
+    .about-section, .tools-section, .projects-section, .conclusion-section {
+        padding: 14px 0 14px 0;
+        min-height: unset;
+        border-bottom: 1.5px solid var(--bg-accent);
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .about-content, .projects-empty-card, .conclusion-section, .tools-flip-grid {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    .timeline-card {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.5rem;
+        margin-top: 0.5rem;
+        min-width: 0;
+        max-width: 96vw;
+        width: 96vw;
+    }
+    .projects-empty-card { padding: 0.7rem 0.7rem; min-height: 80px; }
+    .empty-icon { font-size: 1.1rem; }
+    .empty-message { font-size: 0.7rem; }
+    .conclusion-section { padding: 14px 0 14px 0; }
+    .conclusion-title { font-size: 0.8rem; }
+    .conclusion-message { font-size: 0.7rem; padding: 0 2vw; }
+    .conclusion-form { max-width: 98vw; }
+    .conclusion-textbox { font-size: 0.7rem; padding: 0.3rem 0.7rem; }
+    .conclusion-submit { font-size: 0.7rem; padding: 0.3rem 0.7rem; width: 100%; }
+    .like-btn { width: 22px; height: 22px; font-size: 0.7rem; }
+    .like-area, .visit-area { font-size: 0.6rem; }
+    .site-footer { font-size: 0.5rem; padding: 0.3rem 0 0.5rem 0; }
 }
 .about-section {
     background: var(--bg-main);
@@ -743,9 +802,53 @@ body.theme-fade-dynamic *:not(.theme-switcher):not(.theme-dropdown):not(.theme-c
     .card { width: 98vw; max-width: 320px; }
 }
 @media (max-width: 600px) {
-    .tools-flip-grid { grid-template-columns: 1fr; gap: 1.2rem; }
-    .card { width: 98vw; max-width: 320px; }
-    .tools-title { font-size: 1.5rem; }
+    .tools-flip-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        max-width: 100vw;
+        padding: 0 0.2rem;
+    }
+    .card {
+        width: 98%;
+        max-width: 120px;
+        min-width: 0;
+        margin: 0 auto;
+        height: 120px;
+    }
+    .card-front, .card-back {
+        font-size: 0.85rem;
+        padding: 0.4rem;
+    }
+    .tool-icon { font-size: 1.1rem; }
+    .tool-name { font-size: 0.85rem; }
+    .badge { font-size: 0.7rem; }
+    .progress-bar { width: 50px; height: 6px; }
+    .tools-title { font-size: 1.1rem; margin-bottom: 0.7rem; }
+    .about-section, .tools-section, .projects-section, .conclusion-section {
+        padding: 18px 0 18px 0;
+        min-height: unset;
+        border-bottom: 1.5px solid var(--bg-accent);
+    }
+    .timeline-card {
+        font-size: 0.9rem;
+        padding: 0.7rem 0.3rem;
+        margin-top: 0.5rem;
+        min-width: 0;
+        max-width: 96vw;
+        width: 96vw;
+    }
+    .projects-empty-card { padding: 0.7rem 0.2rem; min-height: 80px; }
+    .empty-icon { font-size: 1.2rem; }
+    .empty-message { font-size: 0.85rem; }
+    .conclusion-section { padding: 18px 0 18px 0; }
+    .conclusion-title { font-size: 0.95rem; }
+    .conclusion-message { font-size: 0.85rem; }
+    .conclusion-form { max-width: 98vw; }
+    .conclusion-textbox { font-size: 0.9rem; padding: 0.4rem 0.5rem; }
+    .conclusion-submit { font-size: 0.9rem; padding: 0.4rem 0.7rem; width: 100%; }
+    .like-btn { width: 30px; height: 30px; font-size: 0.9rem; }
+    .like-area, .visit-area { font-size: 0.8rem; }
+    .site-footer { font-size: 0.65rem; padding: 0.3rem 0 0.5rem 0; }
 }
 #typed-role {
     position: relative;
