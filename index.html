@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Pranav Preman, AI Engineer. Showcasing projects, skills, and education.">
+    <title>Pranav Preman | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inclusive+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        /* Removed scroll-behavior from here, moved to styles.css */
+    </style>
+</head>
+<body>
+    <div id="theme-reveal-overlay"></div>
+    <div class="theme-switcher" id="themeSwitcher" title="Change theme" aria-label="Change theme" data-aos="zoom-in">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+        <div class="theme-dropdown" id="themeDropdown">
+            <!-- Theme circles will be injected here -->
+        </div>
+    </div>
+    <div class="container">
+        <main>
+            <div class="intro">
+                <div class="greet">Hi, my name is</div>
+                <div class="name">Pranav Preman<span style="color: var(--accent);">.</span></div>
+                <div class="role"><span id="typed-role"></span></div>
+                <div class="desc">
+                    Aspiring AI Engineer driven by curiosity and a deep interest in intelligent systems. Currently exploring machine learning, deep learning, and data-driven problem-solving. Eager to build practical solutions while continuously learning and evolving in the fast-paced world of artificial intelligence.
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Projects</button>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/your-linkedin" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-github" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:your@email.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="down-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </main>
+    </div>
+    <section id="about" class="about-section" data-aos="fade-up">
+        <div class="about-content">
+            <h2 class="about-heading">About Me</h2>
+            <p class="about-text">
+                Hello! I'm Pranav Preman, an AI enthusiast with a passion for building intelligent systems that make a difference. My journey in artificial intelligence began with curiosity and has grown into a commitment to continuous learning and practical problem-solving. I enjoy exploring new technologies, collaborating with others, and turning ideas into impactful solutions.
+            </p>
+            <h2 class="education-heading">Education</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="timeline-item left fade-timeline" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-accent"></span>
+                            <div class="timeline-icon"><i class="fa-solid fa-school"></i></div>
+                            <div class="timeline-title">Class 10th</div>
+                            <div class="timeline-detail"><span>School:</span> St. Dominic's Convent School</div>
+                            <div class="timeline-detail"><span>Year:</span> 2017</div>
+                            <div class="timeline-detail"><span>Grade:</span> 95%</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item right fade-timeline" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-accent"></span>
+                            <div class="timeline-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                            <div class="timeline-title">Class 12th</div>
+                            <div class="timeline-detail"><span>School:</span> St. Dominic's Convent School</div>
+                            <div class="timeline-detail"><span>Year:</span> 2019</div>
+                            <div class="timeline-detail"><span>Grade:</span> 93%</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item left fade-timeline" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-accent"></span>
+                            <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="timeline-title">B.Tech Degree</div>
+                            <div class="timeline-detail"><span>School:</span> Jyothi Engineering College</div>
+                            <div class="timeline-detail"><span>Year:</span> 2023</div>
+                            <div class="timeline-detail"><span>Grade:</span> 8.7 CGPA</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item center fade-timeline" data-aos="fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon"><i class="fa-solid fa-infinity"></i></div>
+                            <div class="timeline-title">and life goes on<span class="quirk-ellipsis">...</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tools" class="tools-section">
+        <h2 class="tools-title">My Tools & Technologies</h2>
+        <div class="tools-flip-grid">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon html"><i class="fab fa-html5"></i></span>
+                        <span class="tool-name">HTML/CSS</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge advanced">Advanced</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon python"><i class="fab fa-python"></i></span>
+                        <span class="tool-name">Python</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge advanced">Advanced</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon c"><i class="fa-solid fa-c"></i></span>
+                        <span class="tool-name">C</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge intermediate">Intermediate</span>
+                        <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon cpp"><i class="fa-solid fa-code"></i></span>
+                        <span class="tool-name">C++</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge intermediate">Intermediate</span>
+                        <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon git"><i class="fab fa-git-alt"></i></span>
+                        <span class="tool-name">Git</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge intermediate">Intermediate</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon tailwind"><i class="fa-brands fa-tumblr"></i></span>
+                        <span class="tool-name">Tailwind</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge learning">Learning</span>
+                        <div class="progress-bar"><div class="progress" style="width: 40%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon node"><i class="fab fa-node-js"></i></span>
+                        <span class="tool-name">Node.js</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge learning">Learning</span>
+                        <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <span class="tool-icon node"><i class="fa-solid fa-database"></i></span>
+                        <span class="tool-name">My SQL</span>
+                    </div>
+                    <div class="card-back">
+                        <span class="badge intermediate">Intermediate</span>
+                        <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2 class="projects-title"><span class="project-emoji">🚧</span> Projects</h2>
+        <div class="projects-empty-card">
+            <div class="empty-icon">🤷‍♂️</div>
+            <div class="empty-message">Lol, I haven't created any.<br>This is my first one.</div>
+            <div class="empty-sub">(Stay tuned for more...)</div>
+        </div>
+    </section>
+    <section id="conclusion" class="conclusion-section">
+        <h2 class="conclusion-title">Conclusion & Feedback</h2>
+        <div class="conclusion-message">Thanks for visiting my site! If you have any thoughts, feedback, or just want to say hi, drop a message below. 🚀</div>
+        <form class="conclusion-form" onsubmit="return false;">
+            <textarea class="conclusion-textbox" id="conclusion-textbox" placeholder="Your feedback, thoughts, or a hello..." rows="3"></textarea>
+            <button class="conclusion-submit" id="conclusion-submit">Send</button>
+        </form>
+        <div class="conclusion-likes">
+            <div class="like-area">
+                <button class="like-btn" id="like-btn" title="Like this site!">👍</button>
+                <span class="like-count" id="like-count">0</span> people liked this
+            </div>
+            <div class="visit-area">
+                <span class="visit-count" id="visit-count">0</span> visits so far
+            </div>
+        </div>
+    </section>
+    <div style="height: 40vh;"></div>
+    <footer class="site-footer">
+        <div>made with <span class="footer-heart">&#10084;</span> and <span class="footer-code">&lt;/&gt;</span> by pranav</div>
+        <div class="footer-copyright">&copy; 2024 Pranav Preman. All rights reserved.</div>
+    </footer>
+    <script src="theme-switcher.js"></script>
+    <script src="animations.js"></script>
+    <script src="typed-role.js"></script>
+    <script src="conclusion.js"></script>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+    </nav>
+</body>                                                                 
+</html>
